@@ -7,7 +7,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
   short x;
-  bool i = 1;
+  char i = 'y';
   cout << "Pilih salah satu!\n";
   cout << "1.  Penjumlahan | 8.  Inverse Sinus\n";
   cout << "2.  Pengurangan | 9.  Inverse Cosinus\n";
@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
   cout << "6.  Cosinus     | 13. Pangkat\n";
   cout << "7.  Tangen      | 14. Eksponen\n";
 
-  while (i==1)
+  while (i=='y')
   {
     cout << "\nMasukkan nomor pilihan anda: ";
     cin >> x;
@@ -81,13 +81,10 @@ int main(int argc, char const *argv[])
       cout << "Tidak ada pilihan\n";
     }
 
-    cout << "\nLagi?\n";
-    cout << "0. Tidak\n";
-    cout << "1. Ya\n";
-    cout << "(0/1): ";
+    cout << "\nHitung lagi? (y/n): ";
     cin >> i;
 
-    if (i!=0 && i!=1){
+    if (i!='y'){
       break;
     }
   }
